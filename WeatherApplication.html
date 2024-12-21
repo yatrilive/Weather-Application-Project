@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="/wedApp.css">
+</head>
+<body>
+    <section class="container">
+        <!-- Weather Search Header -->
+        <div class="weather_header">
+            <form class="weather_search">
+                <input type="text" id="city_input" placeholder="Enter city name" />
+                <button type="submit">
+                    <i class="fas fa-magnifying-glass"></i> Search
+                </button>
+                
+            </form>
+        </div>
+        
+        <!-- Weather Display Body -->
+        <section class="weather_body">
+            <h1 class="weather_city"></h1>
+            <p class="weather_date_time"></p>
+
+            <div class="weather_data">
+                <p class="weather_forecast"></p>
+                <div class="weather_icon">
+                    <img src="https://via.placeholder.com/100" alt="Weather icon" class="weather_icon_img" />
+                    <p class="weather_icon_desc"></p>
+                </div>
+            </div>
+
+            <p class="weather_temperature"></p>
+            <div class="weather_min_max">
+                <p class="weather_min"></p>
+                <p class="weather_max"></p>
+            </div>
+        </section>
+
+        <!-- Additional Weather Info -->
+        <section class="weather_info">
+            <div class="weather_cart">
+                <i class="fas fa-thermometer-half"></i>
+                <p>Feels like</p>
+                <p class="weather_feels_like">15&#176;</p>
+            </div>
+            <div class="weather_humidity">
+                <i class="fas fa-tint"></i>
+                <p>Humidity</p>
+                <p class="weather_humidity_value">80%</p>
+            </div>
+            <div class="weather_wind">
+                <i class="fas fa-wind"></i>
+                <p>Wind speed</p>
+                <p class="weather_wind_value">20 m/s</p>
+            </div>
+            <div class="weather_cart">
+                <i class="fas fa-tachometer-alt"></i>
+                <p>Pressure</p>
+                <p class="weather_pressure">1015 hPa</p>
+            </div>
+        </section>
+    </section>
+
+    <script src="/weatherApp.js"></script>
+</body>
+</html>

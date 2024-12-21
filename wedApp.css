@@ -1,0 +1,135 @@
+/* General container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Weather header styling */
+.weather_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather_search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather_search input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 60%;
+}
+
+.weather_search button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.weather_search button i {
+    font-size: 1rem;
+}
+
+.weather_search button:hover {
+    background-color: #0056b3;
+}
+
+/* Weather body styling */
+.weather_body {
+    text-align: center;
+}
+
+.weather_city {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather_date_time {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.weather_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.weather_icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather_temperature {
+    font-size: 2.5rem;
+    color: #ff6f61;
+}
+
+.weather_min_max {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.weather_min,
+.weather_max {
+    color: #333;
+}
+
+/* Additional weather info styling */
+.weather_info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.weather_cart,
+.weather_humidity,
+.weather_wind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 20%;
+}
+
+.weather_cart i,
+.weather_humidity i,
+.weather_wind i {
+    font-size: 2rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.weather_cart p,
+.weather_humidity p,
+.weather_wind p {
+    margin: 5px 0;
+}
+
+.weather_feels_like,
+.weather_humidity_value,
+.weather_wind_value,
+.weather_pressure {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
